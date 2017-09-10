@@ -28,11 +28,11 @@ for (unsigned int i = 1; i < argc ; i++)
 
     for(int k = 0; k <= morsecode[numtmp].size() -1; k++){
         if(morsecode[numtmp][k] == '.'){
-          cout << ".";     //put the beep code here
+           cout << ".";     //put the beep code here
            digitalWrite (0, HIGH); delay(75);
 	   digitalWrite (0, LOW); delay(75); 
         }else{
-           cout << "-";      //put the boop code here (2x longer than beep)
+            cout << "-";      //put the boop code here (2x longer than beep)
             digitalWrite (0, HIGH); delay (150);
 	    digitalWrite (0, LOW); delay(150);
 	}
